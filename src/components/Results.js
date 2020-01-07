@@ -1,9 +1,10 @@
 import React from "react";
+import ResultItem from "./ResultsItem"
 
 function Results(props){
     return(
         <div>
-            {props.data.map(item => <div>{item.name} | {item.street} | {item.city} | {item.state}</div>)}
+           <ResultItem data={props.data}/>
         </div>
     )
 }
