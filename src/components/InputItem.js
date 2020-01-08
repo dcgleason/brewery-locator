@@ -9,7 +9,7 @@ class InputItem extends React.Component{
   render(){
     return(
       <>
-      <div></div>
+      <div>{this.props.info.title}</div>
       </>
     )
   }

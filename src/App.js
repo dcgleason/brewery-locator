@@ -12,7 +12,8 @@ class App extends React.Component {
     super()
     this.state={
       data: [],
-      info: []
+      info: [],
+      inProgress: ``
     }
   }
 
@@ -24,7 +25,7 @@ class App extends React.Component {
         title: `${this.state.inProgress}`,
       }
     }); 
-    console.log(this.state.info)
+    // console.log(this.state.info)
   };
 
   handleChange = (e) => {
@@ -32,7 +33,7 @@ class App extends React.Component {
     this.setState({
       inProgress: `${e.target.value}`
     })
-    console.log(this.state.inProgress)
+    // console.log(this.state.inProgress)
 };
 
   onChange = (e) => {
@@ -53,7 +54,7 @@ class App extends React.Component {
       };
 
   render() {
-   
+   console.log(this.state)
     return (
      <div className="app-container">
       <div className="Brewery-List">
@@ -64,7 +65,7 @@ class App extends React.Component {
         </div>
         <div className="notes-container">
         <InputForm addItem={this.addItem} handleChange={this.handleChange} />
-        <InputList/>
+        <InputList info={this.state.info}/>
         </div>
       </div>
     );

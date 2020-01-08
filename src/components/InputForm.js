@@ -9,7 +9,7 @@ class InputForm extends React.Component{
     return(
       <>
       <form onClick={this.props.addItem}>
-       <label>Chosen Breweries: <input type="text" name="name" onChange={this.props.handleChange}/></label>
+       <label>Breweries To Go: <input type="text" name="name" onChange={this.props.handleChange}/></label>
       <input type="submit" value="Submit" />
     </form>
 
