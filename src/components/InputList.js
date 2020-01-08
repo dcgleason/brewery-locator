@@ -13,7 +13,7 @@ class InputList extends React.Component{
     return(
         <div>
          <ul>
-             <InputItem info={this.props.info}/>
+             <InputItem places={this.props.places}/>
         </ul>
       </div>
     )

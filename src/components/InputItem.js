@@ -4,12 +4,13 @@ class InputItem extends React.Component{
   constructor(props){
     super(props)
   }
-
-
   render(){
     return(
       <>
-      <div>{this.props.info.title}</div>
+      <ol>
+          {this.props.places.map((item, idx) => <li key={idx}>{item}</li>)
+        }                 
+      </ol>
       </>
     )
   }
