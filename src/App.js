@@ -4,6 +4,9 @@ import CitySearch from './components/CitySearch';
 import Results from "./components/Results";
 import InputForm from "./components/InputForm"
 import InputItem from "./components/InputItem"
+import Header from './components/Header';
+import { EmailShareButton, FacebookShareButton, TwitterShareButton, WhatsappShareButton } from "react-share";
+import { EmailIcon, FacebookIcon, TwitterIcon, WhatsappIcon } from "react-share";
 
 
 
@@ -13,7 +16,6 @@ class App extends React.Component {
     this.state={
       data: [],
       places: [],
-      inProgress: ``
     }
   }
 
@@ -43,8 +45,12 @@ class App extends React.Component {
 
   render() {
     return (
-     <div className="app-container">
-      <div className="Brewery-List">
+    <div className="entire-app">
+        <header className="header">
+         <Header/>
+      </header>
+      <div className="app-container">
+      <div className="Brewery-container">
           <CitySearch 
            onChange={this.onChange}
           />
@@ -53,8 +59,17 @@ class App extends React.Component {
         <div className="notes-container">
         <InputForm onSubmit={this.addItem}/>
         <InputItem places={this.state.places}/>
-        </div>
+        </div> 
       </div>
+      <div className="social-share">
+          <div className="share-message">Share your list!</div>
+          <FacebookShareButton url={'facebook.com'}><FacebookIcon/></FacebookShareButton>
+          <TwitterShareButton url={'https://twitter.com/home'}><TwitterIcon/></TwitterShareButton>
+          <WhatsappShareButton url={'whatsapp.com'}><WhatsappIcon/></WhatsappShareButton>
+          <EmailShareButton url={'gmail.com'}><EmailIcon/></EmailShareButton>
+      
+        </div>
+    </div>
     );
   }
 }

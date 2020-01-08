@@ -4,21 +4,39 @@
   align-items: center;
 
 }
-
 .card-container{
   display: grid;
-  grid-template-columns: repeat(auto-fill, 330px);
+  grid-template-columns: repeat(auto-fill, 250px);
   justify-content: center;
   align-items: center;
 
 }
-
 .card{
-  margin: 10px;
+  margin: 1px;
 }
 
 .app-container{
   display: flex;
   justify-content: center;
+  background-color: seagreen;
+} 
+
+.entire-app{
+  background-color: seagreen;
 }
+
+.title{ 
+  display: inline-block;
+  color: white;
+  background-color: grey;
+  
+  top: 0;
+  width: 100%;
+}
+
+.logo{
+  float: left;
+  margin-left: 10px;
+}
+
 
