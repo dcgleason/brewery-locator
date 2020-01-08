@@ -40,7 +40,7 @@ class ResultsItem extends React.Component {
                 <Card.Body>
                 <Card.Title>{this.props.name}</Card.Title>
                 <Card.Text>
-                 {this.props.street} <br/> {this.props.city}, {this.props.state} <br/> {this.props.phone} {this.props.website}
+                 {this.props.street} <br/> {this.props.city}, {this.props.state} <br/> <b>Phone Number:</b>{this.props.phone} <a href={this.props.website}>Website</a>
                 </Card.Text>
                  <Button onClick={this.handleClick} variant="primary">To Front</Button>
                 </Card.Body>

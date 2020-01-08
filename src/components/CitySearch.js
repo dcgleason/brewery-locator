@@ -6,7 +6,7 @@ function CitySearch(props){
         <div className="search-bar">
         <form>
         <label>
-          Search City:
+          Search City for Breweries:
         <input type="text" placeholder="Type City Name" onChange={props.onChange}/>
         </label>
         <input type="submit" value="Submit" onSubmit={props.submitFetch} />

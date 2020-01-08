@@ -59,17 +59,17 @@ class App extends React.Component {
         <div className="notes-container">
         <InputForm onSubmit={this.addItem}/>
         <InputItem places={this.state.places}/>
-        </div> 
-      </div>
-      <div className="social-share">
-          <div className="share-message">Share your list!</div>
+         <div className="social-share">
+           <div className="share-message">Share your list!</div>
           <FacebookShareButton url={'facebook.com'}><FacebookIcon/></FacebookShareButton>
           <TwitterShareButton url={'https://twitter.com/home'}><TwitterIcon/></TwitterShareButton>
           <WhatsappShareButton url={'whatsapp.com'}><WhatsappIcon/></WhatsappShareButton>
           <EmailShareButton url={'gmail.com'}><EmailIcon/></EmailShareButton>
-      
-        </div>
-    </div>
+         </div>
+       </div>
+      </div> 
+      </div>
+     
     );
   }
 }
