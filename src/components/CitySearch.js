@@ -9,7 +9,7 @@ function CitySearch(props){
           Search City for Breweries:
         <input type="text" placeholder="Type City Name" onChange={props.onChange}/>
         </label>
-        <input type="submit" value="Submit" onSubmit={props.submitFetch} />
+        {/* <input type="submit" value="Submit" onSubmit={props.submitFetch} /> */}
       </form>
         </div>
       </div>
