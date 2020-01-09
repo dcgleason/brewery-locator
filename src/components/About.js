@@ -12,10 +12,12 @@ class About extends React.Component {
   
   render() {
     return (
-    <div className="entire-app">
+    <div className="about-container">
+      <div className="about">
        <div>Make Your Own Brewery Tour</div>
-       <Link to="/manager">Show Manger</Link>
+       <Link to="/manager" className="link">Display Manager</Link>
        <Route path="/manager" component={App}/>
+       </div>
     </div>
     );
   }

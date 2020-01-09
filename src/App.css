@@ -40,4 +40,16 @@
   margin-left: 10px;
 }
 
+.about-container{
+  width: 100%;
+  height: 300px;
+  background-color: seagreen;
+}
 
+
+.link {
+  color: #FFF;
+}
+.link:hover {
+   color: #3f2b3d;
+}
