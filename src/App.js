@@ -76,7 +76,6 @@ class App extends React.Component {
         <div className="notes-container">
         <InputForm onSubmit={this.addItem}/>
         <InputList state={this.state} toggleComplete={this.toggleComplete}/>
-        {/* <InputItem state={this.state} toggleComplete={this.toggleComplete}/> */}
          <div className="social-share">
            <div className="share-message">Share your list!</div>
           <FacebookShareButton url={'facebook.com'}><FacebookIcon/></FacebookShareButton>
