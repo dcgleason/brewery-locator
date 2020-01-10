@@ -18,7 +18,7 @@ Brewery Tour Manager allows a user to search breweries in a specific city, and t
 ## Wireframes
 
 - [wireframes](https://i.ibb.co/rkFd87S/Screen-Shot-2020-01-10-at-12-38-01-PM.png)
-- [react architecture]("https://i.ibb.co/qgYqSTd/Screen-Shot-2020-01-10-at-12-47-30-PM.png")
+- [react architecture](https://i.ibb.co/qgYqSTd/Screen-Shot-2020-01-10-at-12-47-30-PM.png)
 
 
 ### MVP/PostMVP 
