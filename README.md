@@ -32,7 +32,7 @@ Brewery Tour Manager allows a user to search breweries in a specific city, and t
 
 #### PostMVP 
 
-- Add a drag and drop feature. User would drag a card and "drop" it in a favorites category. 
+- Drag and drop feature. User drags a card and "drop" it in a favorites category 
 
 ## Components 
 
