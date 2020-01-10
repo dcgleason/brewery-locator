@@ -5,6 +5,11 @@
 
 Brewery Tour Manager allows a user to search breweries in a specific city, and then plan a tour based on the information they've searched. User can type out the tour route as they want it, and then can share this tour on social media with friends / family. 
 
+## Video Presentation
+
+- [video](https://brewery-tour-manager.netlify.com/)
+
+
 ## Project Links
 
 - [github repo](https://github.com/dcgleason/brewery-locator)
@@ -12,29 +17,24 @@ Brewery Tour Manager allows a user to search breweries in a specific city, and t
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+- [wireframes](https://i.ibb.co/rkFd87S/Screen-Shot-2020-01-10-at-12-38-01-PM.png)
+- [react architecture]("https://i.ibb.co/qgYqSTd/Screen-Shot-2020-01-10-at-12-47-30-PM.png")
 
-- [wireframes](<img src="https://i.ibb.co/rkFd87S/Screen-Shot-2020-01-10-at-12-38-01-PM.png" alt="Screen-Shot-2020-01-10-at-12-38-01-PM" />)
-- [react architecture](<img src="https://i.ibb.co/qgYqSTd/Screen-Shot-2020-01-10-at-12-47-30-PM.png" alt="Screen-Shot-2020-01-10-at-12-47-30-PM"/>)
-
-Define the the React components and the architectural design of your app.
 
 ### MVP/PostMVP - 5min
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
-- Finds and use external api 
+- Finds and uses external api 
 - Allows user to search for brewery by city
 - Renders data on page  
-- Allows user to input
-- Allo
+- Allows user to input tour stop manually
+- Can cross out tour stops user has visited
 
 #### PostMVP 
 
 - Add a drag and drop feature. User would drag a card and "drop" it in a favorites category. 
 
-## Components
+## Components (outlined)
 
 
 | Component | Description | 
@@ -49,15 +49,6 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 | InputItem | Displays item, user can click "visited" button to cross out stop | 
 
 
-
-## Time Frames
-
-
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Additional Libraries/Packages
 Used Bootstrap (for React), react-share, react-card-flip, font-awesome
