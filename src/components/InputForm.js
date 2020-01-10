@@ -30,7 +30,7 @@ class InputForm extends React.Component{
     return(
       <>
       <form onSubmit={this.handleSubmit}>
-       <label> Input Brewery Tour Stops: <input type="text" name="name" onChange={this.handleChange} placeholder="E.g. Sam Adams Brewery"/></label>
+       <label> Input Tour Stops: <input type="text" name="name" onChange={this.handleChange} placeholder="E.g. Sam Adams Brewery"/></label>
       <input type="submit" value="Submit" />
     </form>
 

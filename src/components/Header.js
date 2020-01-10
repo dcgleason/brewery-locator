@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="title">
         <div className="logo">
-          <h1>Beer Tour Manager <FontAwesomeIcon icon={faBeer}/></h1>
+          <h1>Brewery Tour Manager <FontAwesomeIcon icon={faBeer}/></h1>
         </div>
     </div>
   );

@@ -77,7 +77,7 @@ class App extends React.Component {
         <InputForm onSubmit={this.addItem}/>
         <InputList state={this.state} toggleComplete={this.toggleComplete}/>
          <div className="social-share">
-           <div className="share-message">Share your list!</div>
+           <div className="share-message">Share your tour!</div>
           <FacebookShareButton url={'facebook.com'}><FacebookIcon/></FacebookShareButton>
           <TwitterShareButton url={'https://twitter.com/home'}><TwitterIcon/></TwitterShareButton>
           <WhatsappShareButton url={'whatsapp.com'}><WhatsappIcon/></WhatsappShareButton>
