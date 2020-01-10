@@ -7,7 +7,7 @@ Brewery Tour Manager allows a user to search breweries in a specific city, and t
 
 ## Video Presentation
 
-- [video](https://brewery-tour-manager.netlify.com/)
+- [video presentation](https://youtu.be/oW-zJdHTrD8)
 
 
 ## Project Links
