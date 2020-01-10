@@ -1,10 +1,11 @@
 import React from 'react';
+import shortid from 'shortid';
 
 class InputForm extends React.Component{
   constructor(props){
     super(props)
     this.state={
-      text: ""
+      text: "",
     }
 
   }
@@ -19,9 +20,12 @@ class InputForm extends React.Component{
     e.preventDefault();
     this.props.onSubmit(this.state.text)  //send state back to app.js and puts it in places array
     this.setState({
-      text: ""
+      text: "",
     })
   }
+
+ 
+
   render(){
     return(
       <>

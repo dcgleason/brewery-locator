@@ -7,6 +7,7 @@ import InputItem from "./components/InputItem"
 import Header from './components/Header';
 import { EmailShareButton, FacebookShareButton, TwitterShareButton, WhatsappShareButton } from "react-share";
 import { EmailIcon, FacebookIcon, TwitterIcon, WhatsappIcon } from "react-share";
+import InputList from './components/InputList';
 
 
 
@@ -16,15 +17,31 @@ class App extends React.Component {
     this.state={
       data: [],
       places: [],
+
     }
   }
 
   addItem=(place)=> {
     console.log(place)
+    let info = {
+      text: place,
+      visited: false
+    }
    this.setState({ 
-      places: [...this.state.places, place],  // not updating with onSubmit 
+      places: [...this.state.places, info]
     }); 
   };
+
+  toggleComplete=(idx)=>{
+    const newArray = this.state.places.slice(0)
+    newArray[idx].visited = !newArray[idx].visited
+    console.log(idx)
+    this.setState ({
+      places: newArray
+    });
+  }
+
+
 
   onChange = (e) => {  // to update state to change the url, onChange runs search function
     this.setState({
@@ -44,6 +61,7 @@ class App extends React.Component {
       };
 
   render() {
+    console.log(this.state)
     return (
     <div className="entire-app">
         <header className="header">
@@ -58,7 +76,8 @@ class App extends React.Component {
         </div>
         <div className="notes-container">
         <InputForm onSubmit={this.addItem}/>
-        <InputItem places={this.state.places}/>
+        <InputList state={this.state} toggleComplete={this.toggleComplete}/>
+        {/* <InputItem state={this.state} toggleComplete={this.toggleComplete}/> */}
          <div className="social-share">
            <div className="share-message">Share your list!</div>
           <FacebookShareButton url={'facebook.com'}><FacebookIcon/></FacebookShareButton>

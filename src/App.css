@@ -53,3 +53,7 @@
 .link:hover {
    color: #3f2b3d;
 }
+
+.text{
+  text-decoration: line-through;
+}
