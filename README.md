@@ -21,7 +21,7 @@ Brewery Tour Manager allows a user to search breweries in a specific city, and t
 - [react architecture]("https://i.ibb.co/qgYqSTd/Screen-Shot-2020-01-10-at-12-47-30-PM.png")
 
 
-### MVP/PostMVP - 5min
+### MVP/PostMVP 
 
 #### MVP 
 - Finds and uses external api 
@@ -34,8 +34,7 @@ Brewery Tour Manager allows a user to search breweries in a specific city, and t
 
 - Add a drag and drop feature. User would drag a card and "drop" it in a favorites category. 
 
-## Components (outlined)
-
+## Components 
 
 | Component | Description | 
 | --- | :---: |  
@@ -47,7 +46,6 @@ Brewery Tour Manager allows a user to search breweries in a specific city, and t
 | InputForm | Form that takes input from user as they type in desired tour stops | 
 | InputList | Passes down props to InputItem| 
 | InputItem | Displays item, user can click "visited" button to cross out stop | 
-
 
 
 ## Additional Libraries/Packages
