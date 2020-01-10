@@ -18,32 +18,33 @@
 .app-container{
   display: flex;
   justify-content: space-around;
-  background-color: seagreen;
+  background-color: rgb(235, 68, 68);
 } 
 
 .entire-app{
-  background-color: seagreen;
+  background-color: rgb(235, 68, 68);
 }
-
 
 .title{ 
   display: inline-block;
   color: white;
-  background-color: grey;
-  
+  background-color: rgb(235, 68, 68);
+  font-family: 'Lobster', cursive;
+  display: flex;
+  justify-content: center;
   top: 0;
   width: 100%;
 }
 
 .logo{
-  float: left;
+  float: center;
   margin-left: 10px;
 }
 
 .about-container{
   width: 100%;
   height: 300px;
-  background-color: seagreen;
+  background-color: rgb(235, 68, 68);
 }
 
 
