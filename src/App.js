@@ -3,7 +3,6 @@ import './App.css';
 import CitySearch from './components/CitySearch';
 import Results from "./components/Results";
 import InputForm from "./components/InputForm"
-import InputItem from "./components/InputItem"
 import Header from './components/Header';
 import { EmailShareButton, FacebookShareButton, TwitterShareButton, WhatsappShareButton } from "react-share";
 import { EmailIcon, FacebookIcon, TwitterIcon, WhatsappIcon } from "react-share";
@@ -95,5 +94,3 @@ class App extends React.Component {
 
 export default App;
 
-//figure out how to add more than one item to make a list, make the UI nice (brewery 1, brewery 2, etc)
-// figure out how to make the css so that a htird of the screen is the togo to note section
