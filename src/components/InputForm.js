@@ -18,9 +18,9 @@ class InputForm extends React.Component{
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.onSubmit(this.state.text)  //send state back to app.js and puts it in places array
+    this.props.onSubmit(this.state.text)  
     this.setState({
-      text: "",
+      text: ""
     })
   }
 
