@@ -1,5 +1,4 @@
 import React from 'react';
-import shortid from 'shortid';
 
 class InputForm extends React.Component{
   constructor(props){

@@ -42,7 +42,7 @@ class App extends React.Component {
 
 
 
-  onChange = (e) => {  // to update state to change the url, onChange runs search function
+  onChange = (e) => {  
     this.setState({
       query: e.target.value
     });

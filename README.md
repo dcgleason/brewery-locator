@@ -1,68 +1,90 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Overview
 
-## Available Scripts
 
-In the project directory, you can run:
+## Project Description
 
-### `yarn start`
+Brewery Tour Manager allows a user to search breweries in a specific city, and then plan a tour based on the information they've searched. User can type out the tour route as they want it, and then can share this tour on social media with friends / family. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Links
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [github repo](https://github.com/dcgleason/brewery-locator)
+- [deployment](https://brewery-tour-manager.netlify.com/)
 
-### `yarn test`
+## Wireframes
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
 
-### `yarn build`
+- [wireframes](<img src="https://i.ibb.co/rkFd87S/Screen-Shot-2020-01-10-at-12-38-01-PM.png" alt="Screen-Shot-2020-01-10-at-12-38-01-PM" />)
+- [react architecture](<img src="https://i.ibb.co/qgYqSTd/Screen-Shot-2020-01-10-at-12-47-30-PM.png" alt="Screen-Shot-2020-01-10-at-12-47-30-PM"/>)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Define the the React components and the architectural design of your app.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### MVP/PostMVP - 5min
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-### `yarn eject`
+#### MVP 
+- Finds and use external api 
+- Allows user to search for brewery by city
+- Renders data on page  
+- Allows user to input
+- Allo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### PostMVP 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Add a drag and drop feature. User would drag a card and "drop" it in a favorites category. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Components
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+| Component | Description | 
+| --- | :---: |  
+| About | Top level component, this renders a link to the page, using React Routes | 
+| App | Contains the basic structure of the app. Is where other main components render to. Also is where the OpenBrewery API is called and where the search function is layed out| 
+| CitySearch | Form that takes input from user as they search for a city  | 
+| Results | Component that passes down props to ResultsItem | 
+| ResultsItem | Renders search results in card format | 
+| InputForm | Form that takes input from user as they type in desired tour stops | 
+| InputList | Passes down props to InputItem| 
+| InputItem | Displays item, user can click "visited" button to cross out stop | 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Time Frames
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Total | H | 6hrs| 5hrs | 5hrs |
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Additional Libraries/Packages
+Used Bootstrap (for React), react-share, react-card-flip, font-awesome
 
-### Making a Progressive Web App
+## Code Snippet
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+The code below deals with the search functionality, and I am particularly proud of it. It sets the state "query" to the inputed value from the CitySearch (a form), and then calls search, passing in the state as an argument. Search then amends the api end point so that it returns the appropiate data. 
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+```
+onChange = (e) => {  
+    this.setState({
+      query: e.target.value
+    });
 
-### Deployment
+    this.search(this.state.query);
+  };
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+  search = (query) => {
+    const url = `https://api.openbrewerydb.org/breweries?by_city=${query}`;
+    fetch(url)
+      .then(results => results.json())
+      .then(res => {console.log(res)
+          this.setState({data: res});
+      })
+      };
+```
 
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Issues and Resolutions
+ Initially, I tried to use the google maps api becuase I wanted to display the route visually, but I ran into CORS errors and couldn't get around them without a back end. I went without the google maps api, and allowed the users to manually input their tour stops instead. 
