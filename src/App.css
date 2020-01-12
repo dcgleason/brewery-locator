@@ -87,9 +87,9 @@ a:hover{
 .info-container{
   display: flex;
   flex-wrap: wrap;
-  margin: 50px;
+  margin: 80px;
   width: 600px;
-  height: 600px;
+  height: 450px;
   padding: 50px;
 }
 
