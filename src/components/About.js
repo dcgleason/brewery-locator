@@ -13,11 +13,12 @@ class About extends React.Component {
   render() {
     return (
     <div className="about-container">
-      <div className="about">
-       <div>Make Your Own Brewery Tour</div>
-       <Link to="/manager" className="link">Display Manager</Link>
-       <Route path="/manager" component={App}/>
-       </div>
+      <div className="info-container">
+        <div className="info">
+            <h1>About</h1>
+            <h6>...Design your own brewery tour! Search brewery by city and then input your desired tour stops. Share your brewery tour to social media! Click "Display Manager" at the top of the page to show app.</h6>
+        </div>
+      </div>
     </div>
     );
   }

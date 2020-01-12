@@ -60,8 +60,8 @@ class App extends React.Component {
       };
 
   render() {
-    console.log(this.state)
     return (
+      <>
     <div className="entire-app">
         <header className="header">
          <Header/>
@@ -86,6 +86,7 @@ class App extends React.Component {
        </div>
       </div> 
       </div>
+      </>
      
     );
   }
