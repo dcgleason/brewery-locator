@@ -16,7 +16,7 @@ class About extends React.Component {
       <div className="info-container">
         <div className="info">
             <h1>About</h1>
-            <h6>...Design your own brewery tour! Search brewery by city and then input your desired tour stops. Share your brewery tour to social media! Click "Display Manager" at the top of the page to show app.</h6>
+            <h6>...Design your own brewery tour! Search brewery by city and then input your desired tour stops. Share your brewery tour to social media. Click "Display Manager" at the top of the page to show app.</h6>
         </div>
       </div>
     </div>
