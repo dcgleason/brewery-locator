@@ -40,9 +40,13 @@ class App extends React.Component {
     });
   }
 
+  onSubmit = (e)=> {
+    e.preventDefault();
+    console.log(e)
+  }
 
-
-  onChange = (e) => {  
+  onChange = (e) => { 
+    e.preventDefault(); 
     this.setState({
       query: e.target.value
     });
@@ -70,6 +74,7 @@ class App extends React.Component {
       <div className="Brewery-container">
           <CitySearch 
            onChange={this.onChange}
+           onSubmit={this.onSubmit}
           />
           <Results data={this.state.data}/>
         </div>
